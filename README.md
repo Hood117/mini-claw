@@ -28,13 +28,14 @@ Create a `.env.local` file locally (or set these in Vercel).
 ```bash
 OPENROUTER_API_KEY="your_openrouter_api_key"
 
-# Optional (default: gpt-3.5-turbo)
-# OPENROUTER_MODEL="gpt-3.5-turbo"
+# Optional (default: openrouter/auto)
+# OPENROUTER_MODEL="openrouter/auto"
+# OPENROUTER_SITE_URL="http://localhost:3000"
 ```
 
 ### Notes about `OPENROUTER_MODEL`
 
-OpenRouter model naming can vary. If `gpt-3.5-turbo` doesn’t work for your OpenRouter account,
+OpenRouter model naming can vary. If `openrouter/auto` isn’t your preference,
 set `OPENROUTER_MODEL` to the model id you see in your OpenRouter dashboard.
 
 ---

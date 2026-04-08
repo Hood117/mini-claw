@@ -42,7 +42,8 @@ export async function POST(req: Request) {
     );
 
     return NextResponse.json({ result }, { status: 200 });
-  } catch {
+  } catch (error) {
+    console.error("Task API error:", error);
     return NextResponse.json(
       { error: "AI request failed" },
       { status: 500 },
